@@ -1,0 +1,602 @@
+@charset "UTF-8";
+/*css初始化*/
+body, p, h1, h2, h3, h4, p, ul, dl, li, dt, dl {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+}
+
+body {
+    font-family: "microsoft yahei";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: 0 none;
+    outline: 0 none;
+    vertical-align: middle;
+}
+
+table {
+    border-spacing: 0;
+}
+
+i {
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*公共类*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.al {
+    text-align: left;
+}
+
+.ac {
+    text-align: center;
+}
+
+.ar {
+    text-align: right;
+}
+
+/*css初始化end*/
+
+/*内容start*/
+#snow {
+    position: relative;
+    padding-bottom: 30px;
+    overflow: hidden;
+    min-width: 700px;
+}
+
+.topbar {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.topbar img {
+    max-width: 15%;
+    max-height: 70px;
+    cursor: pointer;
+}
+
+/*海报视频start*/
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner .play_open {
+    width: 100%;
+    height: 100%;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.reg_open {
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 60px;
+    cursor: pointer;
+}
+
+.reg {
+    display: none;
+    z-index: 10;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 4%;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(160, 25, 25, 0.95);
+    text-align: center;
+}
+
+.reg_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(../images/snow/btn_close.png) center no-repeat;
+}
+
+.reg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.reg .more {
+    display: block;
+    width: 95px;
+    height: 22px;
+    margin: 0 auto 10px;
+    background: url(../images/snow/btn_reg.png) 0 0 no-repeat;
+    background-size: 95px;
+}
+
+.reg form {
+    text-align: center;
+}
+
+.reg label {
+    width: 10%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.reg input.txt {
+    width: 40%;
+    height: 20px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    border: 1px #fff solid;
+    border-color: rgba(255, 255, 255, .5);
+    background-color: rgba(0, 0, 0, 0.24);
+    color: #fcfcfc;
+}
+
+.reg .choose {
+    font-size: 11px;
+    color: #fff;
+}
+
+.reg .choose input {
+    vertical-align: middle;
+}
+
+.reg .choose a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.reg .choose .submit {
+    display: block;
+    width: 95px;
+    height: 22px;
+    margin: 0 auto 10px;
+    background: url(../images/snow/btn_reg.png) 0 -22px no-repeat;
+    background-size: 95px;
+}
+
+/*海报视频end*/
+
+/* 日程表start */
+
+.calendar {
+    position: relative;
+    text-align: center;
+}
+
+.calendar-nav {
+    padding: 30px 0;
+    line-height: 64px;
+}
+
+.calendar-nav li {
+    display: inline-block;
+    position: relative;
+    padding: 10px 15px;
+    color: #3d4146;
+    cursor: pointer;
+}
+
+.calendar-nav li:hover {
+    color: #990000;
+}
+
+.calendar-nav li:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    margin-top: -10px;
+    content: "";
+    background: #484c51;
+}
+
+.calendar-nav li:last-child:after {
+    content: initial;
+}
+
+.calendar .tb {
+    position: absolute;
+    top: 124px;
+    left: 0;
+    right: 0;
+    padding: 0 50px 50px;
+    border-top: 1px solid #d9d9d9;
+    background-color: #fff;
+    z-index: 105;
+    display: none;
+}
+
+.calendar .tb:after {
+    content: "";
+    height: 40px;
+    background-color: #f2f2f2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.calendar .tb .arrow {
+    position: absolute;
+    left: 50%;
+    top: -24px;
+    border: 20px solid transparent;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom-color: #d9d9d9;
+}
+
+.calendar .tb .arrow:after {
+    position: absolute;
+    content: "";
+    left: -20px;
+    top: -11px;
+    border: 20px solid transparent;
+    border-top-width: 12px;
+    border-bottom-width: 12px;
+    width: 0;
+    height: 0;
+    display: block;
+    border-bottom-color: #f2f2f2;
+}
+
+.calendar .tb0 .arrow {
+    margin-left: -190px;
+}
+
+.calendar .tb1 .arrow {
+    margin-left: -30px;
+}
+
+.calendar .tb2 .arrow {
+    margin-left: 150px;
+}
+
+.calendar .tb table {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.calendar .tb table .col1 {
+    width: 40%;
+}
+
+.calendar .tb table .col2 {
+    width: 35%;
+}
+
+.calendar .tb table .col3 {
+    width: 25%;
+    text-align: right;
+}
+
+.calendar .tb table th,
+.calendar .tb table td {
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+}
+
+.calendar .tb table td {
+    border-bottom: 1px solid #bfbfbf;
+    color: #3e4146;
+}
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3000px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+}
+
+/* 日程表end */
+
+/*圆形菜单start*/
+
+.circle {
+    position: relative;
+    height: 650px;
+    padding-top: 20px;
+    background: url(../images/snow/circle_menu_bg.jpg) center;
+    background-size: cover;
+    text-align: center;
+}
+
+.circle_menu {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    z-index: 1;
+}
+
+.mid_poster,
+.mid_play360,
+.virtual {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 650px;
+    height: 650px;
+    margin-left: -326px;
+    margin-top: -316px;
+}
+
+.mid_play360 {
+    z-index: 8;
+}
+
+/*外圈图片类名链接*/
+.circle .virtual {
+    z-index: 1;
+}
+
+.circle .img {
+    width: 650px;
+    height: 650px;
+}
+
+.c1 {
+    background: url(../images/snow/c1.png) center;
+}
+
+.c2 {
+    background: url(../images/snow/c2.png) center;
+}
+
+.c3 {
+    background: url(../images/snow/c3.png) center;
+}
+
+.c4 {
+    background: url(../images/snow/c4.png) center;
+}
+
+.c5 {
+    background: url(../images/snow/c5.png) center;
+}
+
+.c6 {
+    background: url(../images/snow/c6.png) center;
+}
+
+/*圆形菜单end*/
+
+/*手风琴strat*/
+.desc {
+    position: relative;
+    padding-top: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.desc li {
+    float: left;
+    position: relative;
+    width: 25%;
+    min-width: 260px;
+    padding-top: 160px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.desc li i {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 92px;
+    height: 90px;
+    margin-left: -46px;
+    background: url(../images/snow/icon.png) 0 0 no-repeat;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .6s, opacity 1.5s;
+    transition: transform .6s;
+}
+
+.desc li:hover i {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.desc li h3 {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    width: 154px;
+    height: 23px;
+    margin-left: -77px;
+    background: url(../images/snow/icon.png) 0 -210px no-repeat;
+    cursor: pointer;
+    line-height: 90px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.desc li p {
+    line-height: 24px;
+}
+
+.desc .item2 i {
+    background-position-x: -100px;
+}
+
+.desc .item3 i {
+    background-position-x: -200px;
+}
+
+.desc .item4 i {
+    background-position-x: -300px;
+}
+
+.desc .item2 h3 {
+    width: 175px;
+    background-position: -170px -210px;
+}
+
+.desc .item3 h3 {
+    width: 175px;
+    background-position: 0 -270px;
+}
+
+.desc .item4 h3 {
+    width: 154px;
+    background-position: -190px -270px;
+}
+
+.play_video {
+    height: 575px;
+    overflow: hidden;
+}
+
+.play_video li {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+.play_video .pl_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    background: url(../images/snow/btn_play.png) center no-repeat;
+    opacity: 0.6;
+}
+
+.play_video .pl_btn:hover {
+    opacity: 1;
+}
+
+/*手风琴end*/
+
+/*精彩瞬间start*/
+.split {
+    text-align: center;
+}
+
+.split .title {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.split .img_list {
+    width: 100%;
+    border: 2px solid #fff;
+}
+
+.split .img_list td {
+    position: relative;
+    width: 20%;
+    height: 174px;
+    border: 2px solid #fff;
+}
+
+.split .img_list td img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 15;
+    display: none;
+}
+
+.pop_img .img {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fore1{
+    transform: rotateY(0deg);
+    transition: all 1s ease 0s;
+    z-index: 10;
+}
+
+.fore2 {
+    transform: rotateY(180deg);
+    transition: all 1s ease 0s;
+    z-index: 9;
+}
+
+/*精彩瞬间end*/

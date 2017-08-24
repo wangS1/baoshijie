@@ -1,0 +1,351 @@
+/*logo开始*/
+.header {
+    height: 50px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+    padding-top: 22px;
+}
+
+.header .logo {
+    width: 132px;
+    height: 53px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.header .logo a {
+    display: block;
+    height: 53px;
+    width: 100px;
+    margin-left: 16px;
+    text-indent: -99999px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -1768px no-repeat;
+    overflow: hidden;
+}
+
+/*logo结束*/
+
+/*主导航开始*/
+.main-navigation {
+    height: 43px;
+    line-height: 65px;
+    /*background-color: pink;*/
+    margin-top: 14px;
+}
+
+.all,.menu-right{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+.main-navigation .all .all-a{
+    display: inline-block;
+    height: 17px;
+    width: 85px;
+    line-height: 17px;
+    margin-top: 13px;
+    border-right: 1px solid black;
+}
+.main-navigation  a {
+    font-size: 14px;
+    font-family: Arial,黑体,SimHei,宋体,SimSun,sans-serif;
+    /*color: black;*/
+}
+
+
+
+/*第一块*/
+#thbox01 {
+    width: 378px;
+    height: 742px;
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 62px;
+    z-index: 2;
+}
+#thbox01 em{
+    width: 19px;
+    height: 10px;
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -2731px no-repeat;
+}
+#thbox01 .tha{
+    display: block;
+    height: 84px;
+    line-height: 84px;
+    border-bottom: 1px solid #DFDFDF;
+    line-height: 84px;
+}
+
+#thbox01 a span {
+    float: left;
+}
+
+#thbox01 .tha b {
+    float: right;
+    margin-right: -128px;
+}
+
+#thbox01 .tha i {
+    width: 108px;
+    height: 38px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -351px no-repeat;
+    float: right;
+    margin: 22px 30px 0 0;
+}
+
+#thbox01 #lqqitem01{
+    width: 324px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+#thbox01 #lqqitem02{
+    width: 324px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+#thbox01 #lqqitem03{
+    width: 324px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+#thbox01 #lqqitem04{
+    width: 324px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+#thbox01 #lqqitem05{
+    width: 324px;
+    padding-left: 32px;
+    padding-right: 22px;
+}
+
+/*第一块中的第二级menu样式*/
+.sub-menu {
+    width: 300px;
+    height: 172px;
+    /*margin-left: 1px;*/
+    /*background-color: pink;*/
+    border-top: 1px solid #DEDEDE;
+    border-left: 1px solid #DEDEDE;
+    display: none;
+    position: absolute;
+    top: -1px;
+    left: 378px;
+}
+
+.menu-item {
+    height: 42px;
+    width: 265px;
+    padding-left: 35px;
+    line-height: 42px;
+    border-bottom: 1px solid #DEDEDE;
+    /*position: relative;*/
+}
+
+.last {
+    border-bottom: 0;
+}
+
+.sub-menu .menu-item  a b{
+    position: absolute;
+    right: 15px;
+    font-size: 14px;
+}
+#lqqitem04 #lqq4{
+    top: 120px;
+}
+#lqqitem05 #lqq5{
+    top: 120px;
+}
+
+/*后四块*/
+#thbox02{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 190px;
+    z-index: 2;
+}
+#thbox02 span {
+    width: 19px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -2731px no-repeat;
+}
+#thbox03{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 350px;
+}
+#thbox03 span {
+    width: 19px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -2731px no-repeat;
+}
+#thbox04{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 470px;
+}
+#thbox04 span {
+    width: 19px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -2731px no-repeat;
+}
+#thbox05{
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 590px;
+}
+#thbox05 span {
+    width: 19px;
+    height: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: url("../images/lowres-s517f9d24f8.png") 0 -2731px no-repeat;
+}
+#thbox02 .thitem, #thbox03 .thitem, #thbox04 .thitem, #thbox05 .thitem {
+    margin-top: 9px;
+    width: 218px;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+}
+
+#thbox04 .thitem {
+    width: 274px;
+}
+
+#thbox05 .thitem {
+    width: 174px;
+}
+
+#thbox02 a, #thbox03 a, #thbox04 a, #thbox05 a {
+    padding-left: 15px;
+    line-height: 42px;
+    display: block;
+    border-bottom: 1px solid #DFDFDF;
+    color: #272727;
+    cursor: pointer;
+}
+
+#thbox02 .thitem .lasta, #thbox03 .thitem .lasta, #thbox04 .thitem .lasta, #thbox05 .thitem .lasta {
+    border-bottom: 0;
+}
+
+/*详情页*/
+.menu-item{
+    background-color: #fff;
+}
+
+.sub-menu .menu-item .public{
+    width: 580px;
+    height: 742px;
+    border: 1px solid #DFDFDF;
+    position: absolute;
+    left: 300px;
+    top: -1px;
+    display: none;
+    background-color: #fff;
+}
+/*详情图片s*/
+.sub-menu .menu-item .public .top1 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p1.jpg");
+}
+.sub-menu .menu-item .public .top2 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p2.jpg");
+}
+.sub-menu .menu-item .public .top3 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p3.jpg");
+}
+.sub-menu .menu-item .public .top4 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p4.jpg");
+}
+.sub-menu .menu-item .public .top5 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p5.jpg");
+}
+.sub-menu .menu-item .public .top6 a{
+    height: 240px;
+    /*background: darkcyan;*/
+    display: block;
+    background: url("../images/p6.jpg");
+}
+/*详情图片e*/
+.sub-menu .menu-item .public .left{
+    float: left;
+    margin-left: 26px;
+}
+.sub-menu .menu-item .public .left a{
+    display: block;
+    line-height: 40px;
+}
+.sub-menu .menu-item .public .left .a01{
+    line-height: 40px;
+    margin: 30px 0 10px 0;
+    font-size: 24px;
+    color: #000;
+    font-weight: 600;
+}
+.sub-menu .menu-item .public .left a i{
+    float: left;
+    margin-right: 10px;
+}
+.sub-menu .menu-item .public .left button{
+    width: 87px;
+    height: 37px;
+    background-color: #990000;
+    color:#fff;
+    margin-top:14px;
+}
+.sub-menu .menu-item .public .right{
+    float: left;
+    margin-top:93px;
+    margin-left: 100px;
+    border-left: 1px solid #DFDFDF;
+    padding-left: 18px;
+}
+
+.sub-menu .menu-item .public .right b{
+    display: block;
+    line-height: normal;
+}
+.sub-menu .menu-item .public .right i{
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,209 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*统一组合框的默认样式*/
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+select, input, button {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    background: #fff;
+}
+
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.w {
+    /*版心 提取 */
+    width: 1171px;
+    margin: 0 auto;
+}
+
+/*内容样式*/
+
+.carrera_911_specialist .fwbigBox {
+    height: 296px;
+    /*background-color: #0e4ff5;*/
+    width: 1171px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.carrera_911_specialist .fwbigBox ul {
+    width: 3000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carrera_911_specialist .fwbigBox li {
+    float: left;
+    display: inline-block;
+}
+
+.carrera_911_specialist .fwbigBox .alone_li {
+    margin-right: 5px;
+}
+
+.carrera_911_specialist .fwbigBox .xz-img {
+    width: 289px;
+    height: 216px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrera_911_specialist .fwbigBox a {
+    display: inline-block;
+    position: relative;
+}
+
+.carrera_911_specialist .fwbigBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(1) translateZ(0);
+    -webkit-transition: -webkit-transform .75s;
+    transform: scale(1) translateZ(0);
+    transition: transform .75s
+}
+
+.carrera_911_specialist .fwbigBox .buttom_box {
+    height: 5px;
+    width: 289px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.carrera_911_specialist .fwbigBox .play_box {
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    display: none;
+}
+
+.carrera_911_specialist .fwbigBox .img-box:hover img {
+    -webkit-transform: scale(1.07) translateZ(0);
+    -webkit-transition: -webkit-transform .75s cubic-bezier(0, 1, .75, 1);
+    transform: scale(1.07) translateZ(0);
+    transition: transform .75s cubic-bezier(0, 1, .75, 1)
+}
+
+.carrera_911_specialist .fwbigBox .jies a {
+    width: 249px;
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+    font-family: 宋体;
+    font-size: 14px;
+}
+
+.carrera_911_specialist .fwbigBox li:hover .jies a {
+    color: red;
+}
+
+.carrera_911_specialist .fwbigBox .jies i {
+    font-family: 宋体;
+    font-size: 14px;
+    font-weight: 700;
+    color: red;
+    padding-right: 10px;
+}
+
+.carrera_911_specialist #fuw_arr {
+    display: none;
+}
+
+.carrera_911_specialist #fuw_arr span {
+    width: 26px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -60px;
+    background: #000;
+    cursor: pointer;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.carrera_911_specialist #fuw_arr #fuw_right {
+    right: 5px;
+    left: auto;
+}

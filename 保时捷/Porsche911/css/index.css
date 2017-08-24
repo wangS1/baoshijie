@@ -1,0 +1,244 @@
+.head{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.h-hr {
+    width: 1200px;
+    margin: 20px auto;
+    background:#ccc;
+    height: 1px;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.h-hr span {
+    display: inline-block;
+    background-color: white;
+    display: inline-block;
+    height: 36px;
+    z-index: 1;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+    line-height: 36px;
+    position: relative;
+    top: -15px;
+}
+/*中间内容*/
+.big-box{
+    width: 1200px;
+    /*height: 452px;*/
+    /*background-color: red;*/
+    margin: 15px auto;
+
+}
+.left-box{
+    width: 800px;
+    height: 452px;
+    /*background-color: pink;*/
+    position: relative;
+    overflow: hidden;
+}
+.left-box ul li{
+    width: 800px;
+    height: 452px;
+    float: left;
+}
+.left-box ul{
+    width: 5600px;
+    position: relative;
+}
+.left-box ol{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -30px;
+}
+.left-box ol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #666666;
+    float: left;
+    margin: 0 7px;
+}
+.left-box ol .current{
+    background-color: red;
+}
+#arr {
+    display: none;
+}
+
+#arr span {
+    width: 36px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -60px;
+    background: #000;
+    cursor: pointer;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'console';
+    font-size: 40px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+.right-box{
+    width: 400px;
+    height: 452px;
+    position: relative;
+    /*background-color: yellow;*/
+    /*border-top: 1px solid #cccccc;*/
+}
+.r-top,.r-cen,.r-bot{
+    width:100%;
+    height: 60px;
+    font: 700 18px "宋体";
+    line-height: 60px;
+    position: relative;
+}
+.r-top i,.r-cen i,.r-bot i{
+    width: 12px;
+    height: 6px;
+    background: url("../images/107.gif") 0 0 no-repeat;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.r-top,.r-cen,.r-bot{
+    border-top: 1px solid #cccccc;
+    cursor: pointer;
+}
+.right-box span{
+    margin-left: 10px;
+
+    display: inline-block;
+}
+
+.r-top-co span{
+    margin: 5px 10px;
+}
+.right-box li{
+    float: left;
+    width: 40px;
+    height: 40px;
+    /*background-color: red;*/
+    margin:0 3px;
+    cursor: pointer;
+}
+.r-top-co #yellow{
+    background-color:#ffcc00;
+    position: relative;
+}
+.r-top-co s{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font: bold 12px "console";
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 7px;
+    display: none;
+}
+.r-top-co .black{
+    background-color: #000000;
+}
+.r-top-co #red{
+    background-color: #E60002;
+    position: relative;
+}
+.r-top-co .yin{
+    background-color: #efefef;
+}
+.r-top-co #white{
+    background-color: #EFF5F9;
+    position: relative;
+}
+.r-top-co .c1{
+    background-color: #1568AC;
+    position: relative;
+}
+.r-top-co .c2{
+    background-color: #333333;
+}
+.r-top-co .c3{
+    background-color: #556775;
+}
+.r-top-co .c5{
+    background-color: #CCCCCC;
+}
+.r-top-co .c6{
+    background-color: #000000;
+}
+.r-top-co .c7{
+    background-color: #332199;
+}
+.r-top-co .c8{
+    background-color: #00C552;
+    position: relative;
+}
+.r-top-co .c9{
+    background-color: #990033;
+}
+.r-top-co #org{
+    background-color: #D7361C;
+    position: relative;
+}
+.r-top-co .c10{
+    background-color: #00788A;
+}
+.r-top-co .c11{
+    background-color: #330000;
+}
+.r-top-co {
+    margin-bottom: 20px;
+    display: none;
+}
+.r-cen-lt li{
+    float: left;
+    width: 95px;
+    height: 95px;
+    background-color: red;
+    margin: 2px 2px;
+    background-size:cover ;
+}
+.r-cen-lt{
+    display: none;
+}
+.rotate{
+    transform: rotate(180deg);
+    transition: transform 500ms;
+}
+.r-bot-yc{
+    display: none;
+}
+.jx-box{
+    font: 18px "宋体";
+    height: 40px;
+    width: 100px;
+    background-color: #9A0000;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}

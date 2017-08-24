@@ -1,0 +1,290 @@
+.main-img {
+    /*margin-top: 130px;*/
+}
+
+.main-img img {
+    width: 100%;
+}
+
+.carrera_911_main {
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    position: static;
+}
+
+.carrera_911_technical {
+    height: 500px;
+}
+
+.carrera_911_main ul {
+    float: left;
+    position: relative;
+}
+
+.carrera_911_main_back ol {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #212121;
+    height: 150px;
+    width: 340px;
+    z-index: 3;
+    display: none;
+}
+
+.carrera_911_main_back ol li {
+    float: none;
+}
+
+.carrera_911_main_back ol li a {
+    color: white;
+    display: block;
+    height: 50px;
+    width: 320px;
+    text-align: left;
+    padding-left: 20px;
+    font-family: Arial, 黑体, SimHei, 宋体, SimSun, sans-serif;
+}
+
+.carrera_911_main_back ol li a:hover {
+    background-color: #990000;
+    color: white;
+}
+
+.carrera_911_main li {
+    float: left;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 微软雅黑;
+}
+
+.carrera_911_main li i {
+    margin-right: 10px;
+}
+
+.carrera_911_main_back a {
+    display: block;
+    width: 40px;
+    height: 51px;
+    background-color: #212121;
+    color: white;
+}
+
+.carrera_911_main_back a:hover {
+    color: #990000;
+}
+
+.carrera_911_main_list .main_list_a {
+    display: block;
+    width: 300px;
+    background-color: #990000;
+    color: white;
+}
+
+.carrera_911_main_list .main_list_a:hover {
+    color: #990000;
+    background-color: #F2F2F2;
+}
+
+/**/
+.carrera_911_main_list ol {
+    position: absolute;
+    top: 51px;
+    left: 40px;
+    background-color: #212121;
+    height: 150px;
+    z-index: 3;
+    display: none;
+}
+
+.carrera_911_main_list ol li {
+    float: none;
+
+}
+
+.carrera_911_main_list ol li a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding-left: 100px;
+    color: black;
+    text-align: left;
+    font-family: Arial, 黑体, SimHei, 宋体, SimSun, sans-serif;
+    position: relative;
+}
+
+.carrera_911_main_list ol li a b {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: #d2d9de;
+}
+
+/**/
+.carrera_911_main_technical a {
+    display: block;
+    width: 120px;
+    background-color: #F2F2F2;
+}
+
+.carrera_911_main_tuku a {
+    display: block;
+    width: 92px;
+    background-color: #F2F2F2;
+}
+
+.carrera_911_main_fuwu {
+    float: right;
+    padding-right: 97px;
+}
+
+.carrera_911_main_fuwu a {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding-left: 25px;
+    color: #2A4B6D;
+    font-family: 微软雅黑;
+    margin-top: 5px;
+}
+
+.carrera_911_main_fuwu span {
+    padding-left: 10px;
+}
+
+.carrera_911_main_fuwu a:hover {
+    color: #990000;
+}
+
+.carrera_911_main_fuwu a:hover i {
+    background-color: #990000;
+}
+
+.carrera_911_main_fuwu a i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2A4B6D;
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+}
+
+.carrera_911_technical_line {
+    padding-top: 50px;
+}
+
+.carrera_911_technical_line h2 {
+    width: 90%;
+    height: 1px;
+    background-color: #BBBBBB;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carrera_911_technical_line span {
+    display: block;
+    width: 104px;
+    height: 37px;
+    background-color: white;
+    line-height: 37px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    font-family: 黑体;
+    padding: 0 26px;
+    top: -18px;
+    left: 42%;
+}
+
+.carrera_911_technical_img {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.carrera_911_technical_img_shuju {
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.carrera_911_technical_img_shuju .shuju a {
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #3E4146;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    /*font-weight: 700;*/
+    color: white;
+    font-size: 14px;
+    font-family: 黑体;
+    padding-left: 10px;
+}
+
+.carrera_911_technical_img_shuju .shuju a:hover {
+    color: red;
+}
+
+.carrera_911_technical_img_shuju .shuju i {
+    margin-right: 10px;
+}
+
+.carrera_911_technical_img_shuju .duibi a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 黑体;
+    padding-left: 30px;
+    position: relative;
+}
+
+/**/
+.carrera_911_specialist .bigBox {
+    /*margin-top: 100px;*/
+}
+
+.carrera_911_specialist_line {
+    padding-top: 50px;
+}
+
+.carrera_911_specialist_line h2 {
+    width: 90%;
+    height: 1px;
+    background-color: #BBBBBB;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.carrera_911_specialist_line span {
+    display: block;
+    width: 104px;
+    height: 37px;
+    background-color: white;
+    color: black;
+    line-height: 37px;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    font-family: 黑体;
+    padding: 0 26px;
+    top: -18px;
+    left: 44%;
+}

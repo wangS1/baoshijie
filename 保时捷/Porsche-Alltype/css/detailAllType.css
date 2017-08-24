@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+
+/*顶部导航开始*/
+.top-nav{
+    height: 55px;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+.t-nav{
+    font-size: 24px;
+    line-height: 55px;
+    font-weight: 900;
+}
+/*左侧导航*/
+.sy{
+    width: 40px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    position: relative;
+}
+.home{
+    width: 320px;
+    height: 40px;
+    background-color: black;
+    padding-left: 20px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    font: 700 14px/40px "simsun";
+    text-align: left;
+    display:none;
+}
+.sy:hover .home{
+    display: block;
+}
+.fx i,.sy i{
+    line-height: 40px;
+    margin:0 5px;
+    /*float: left;*/
+    /*width: 13px;*/
+    /*height: 23px;*/
+    /*/!*background:url(../images/icon.png) -70px -16px no-repeat;*!/*/
+    /*margin: 13px 18px;*/
+    /*color: #fff;*/
+}
+.fx{
+    width: 300px;
+    height: 50px;
+    background-color: #990000;
+    font: 700 14px/50px "simsun";
+    color: white;
+    position: relative;
+}
+.discover{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+
+}
+.fx .discover li{
+    width: 260px;
+    height: 40px;
+    padding-left: 40px;
+    background-color: #F7F7F7;
+    font: 700 14px/40px "simsun";
+
+
+}
+.selstyle{
+
+    border-bottom: 1px solid #ccc;
+}
+.fx .discover .dis{
+    background-color: #990000;
+    color: #fff;
+}
+.fx:hover{
+    background-color: #F7F7F7;
+    color: #999;
+    cursor: pointer;
+}
+.fx:hover .discover{
+    display: block;
+}
+.discover li:hover{
+    background-color: #990000;
+    color: #fff;
+
+}
+/*内容部分*/
+.con-header{
+    font-size: 20px;
+    font-weight: 700;
+    height: 40px;
+    border-bottom: 1px solid #CCCCCC;
+    line-height: 40px;
+    margin-top: 42px;
+    cursor: pointer;
+    /*color: red;*/
+    background-color: rgba(227,227,227,0.1);
+
+}
+.con-header span{
+    margin-left: 10px;
+}
+.select-item{
+    height: 225px;
+    border-bottom: 1px solid #CCCCCC;
+    /*overflow: hidden;*/
+    display: none;
+}
+.select-item ul{
+    width: 400px;
+    float: left;
+}
+.select-item li{
+    height: 45px;
+    line-height: 45px;
+}
+.reset{
+    float: right;
+    margin-top: 33px;
+    height: 36px;
+    padding: 0 20px;
+    line-height: 36px;
+    color:#fff;
+    background-color: #999;
+}
+.reset:hover{
+    background-color:  #990000;
+}
+.con-list1{
+    margin-left: 10px;
+    width: 270px;
+    /*height: 300px;*/
+    margin-top: 44px;
+    position: relative;
+}
+.con-list{
+    width: 270px;
+    height: 300px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    border-bottom: 4px solid #CC0000;
+    position: absolute;
+    top: -118px;
+    left: 0;
+    display: none;
+
+}
+.con-list1:hover .con-list{
+    display: block;
+}
+.con-list1:hover .con-li-foot .car-type{
+    color:red;
+}
+.con-li-top{
+    padding-left: 56px;
+    padding-top: 10px;
+    line-height: 36px;
+    background-color: #fff;
+}
+.con-li-top em{
+    color: red;
+    font-family: 'simsun';
+    font-weight: 700;
+}
+.con-li-pic{
+    text-align: center;
+}
+.con-li-foot{
+    text-align: center;
+
+}
+
+/*内容底部*/
+.con-foot{
+    margin-top: 50px;
+    height: 0;
+    border-bottom: 1px solid #cccccc;
+    position: relative;
+}
+.con-foot span{
+    font: 700 24px/36px simsun;
+    padding: 0 26px;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    margin-left: -52px;
+    background-color: #fff;
+}
+.foot-nav {
+    text-align: center;
+    padding: 30px 0;
+
+}
+.foot-nav .space{
+
+
+    margin: 0 5px;
+    border: 1px solid #ccc;
+}
